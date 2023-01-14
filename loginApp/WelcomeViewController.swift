@@ -17,6 +17,7 @@ class WelcomeViewController: LoginViewController {
     }
     
     @IBAction func logOutButton() {
+        dismiss(animated: true)
     }
     
 }
