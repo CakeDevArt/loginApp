@@ -93,7 +93,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLj-6B-gFy">
                                 <rect key="frame" x="173.66666666666666" y="192" width="82.999999999999972" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc9-CR-TVq">
@@ -105,6 +105,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logOutButton" destination="phn-8R-cr7" eventType="touchUpInside" id="4mH-x0-G69"/>
+                                    <segue destination="B0r-KB-ghw" kind="unwind" unwindAction="unwindFor:" id="yh8-e4-mgf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -123,6 +124,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vu1-vR-E0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="B0r-KB-ghw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="747.90697674418607" y="-3.218884120171674"/>
         </scene>
